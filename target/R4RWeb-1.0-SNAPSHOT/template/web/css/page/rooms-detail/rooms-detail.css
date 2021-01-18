@@ -1,0 +1,124 @@
+.content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+    margin: 60px auto 0;
+    padding: 16px;
+}
+
+.content .container .info-header {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-bottom: 1px solid black;
+}
+h1 {
+    margin-bottom: 12px;
+}
+.content .container .info-header .main-info {
+    font-size: 20px;
+}
+
+.content .container .info-header .main-info .name .name-icon {
+    display: flex;
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../../content/icon/name.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content .container .info-header .main-info .phone .phone-icon {
+    display: flex;
+    float: left;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../../content/icon/phone.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.content .container .info-header .main-info .phone .phone-text {
+    padding-left: 24px;
+}
+
+.content .container .info-header .main-info .address .address-icon {
+    display: flex;
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../../content/icon/address.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content .container .info-header h2 {
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.content .container .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content .container .info .info-type,
+.content .container .info .info-area,
+.content .container .info .info-deposit,
+.content .container .info .info-capacity,
+.content .container .info .info-electric,
+.content .container .info .info-water,
+.content .container .info .info-fee,
+.content .container .info .info-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    height: 15vh;
+    padding-left: 48px;
+    /* border: 1px solid black; */
+}
+
+h3 {
+    font-size: 18px;
+}
+h3 + p {
+    font-size: 14px;
+}
+
+.content .container .info .info-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 48px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1007px) {
+    .content .container .info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .container .info .info-type,
+    .content .container .info .info-area,
+    .content .container .info .info-deposit,
+    .content .container .info .info-capacity,
+    .content .container .info .info-electric,
+    .content .container .info .info-water,
+    .content .container .info .info-fee,
+    .content .container .info .info-status {
+        width: 50%;
+        padding-left: 0;
+    }
+    .content .container .info .info-description {
+        padding-left: 0;
+    }
+}

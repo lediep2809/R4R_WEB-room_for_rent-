@@ -1,0 +1,262 @@
+/* Common things */
+option:disabled {
+  display: none;
+}
+
+select {
+  cursor: pointer;
+}
+
+div.input-wrap {
+  position: relative;
+}
+
+input,
+select {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 300px;
+  height: 1.5em;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+label {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 1rem;
+  color: #757575;
+  cursor: text;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  transform-origin: 0 100%;
+}
+
+input:focus {
+  border-bottom: 2px solid #34568b;
+}
+
+input:focus + label {
+  color: #34568b;
+  font-size: 1rem;
+  transform: translateY(-20px);
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+input:not([value=""]):not(:focus) + label {
+  font-size: 1rem;
+  transform: translateY(-20px);
+}
+/*  */
+
+body {
+  background-color: #e4efe9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  width: 70%;
+  margin: 48px auto;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+form {
+  width: 80%;
+}
+
+h1 {
+  color: #34568b;
+  font-size: 48px;
+  text-align: center;
+  margin: 24px 0 12px;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  color: #34568b;
+  margin-bottom: 24px;
+}
+
+.name,
+.address,
+.power,
+.description,
+.common-price,
+.fee,
+.owner-wrapper,
+.utilities,
+.end-form {
+  margin: 24px 0;
+  /* align-items: center; */
+}
+
+/* Line 1 */
+.name {
+  display: flex;
+}
+.name input {
+  width: 100%;
+}
+
+/* Line 2 */
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+.address input {
+  width: 100%;
+}
+
+/* Line 3 */
+.power {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.power .area {
+  display: flex;
+}
+
+.power .contain {
+  display: flex;
+}
+
+/* Line 4 */
+.description {
+  display: flex;
+}
+.description input {
+  width: 100%;
+}
+
+/* Line 5 */
+.common-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.common-price input {
+  width: 300px;
+}
+.common-price .price-wrapper {
+  display: flex;
+}
+
+/* Line 6 */
+.fee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fee input {
+  width: 250px;
+}
+
+/* Line 7 */
+.owner-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.owner-wrapper input {
+  width: 300px;
+}
+
+/* Last line */
+.end-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.end-form .button {
+  font-family: GoogleSans-Bold;
+  font-size: 16px;
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+}
+.end-form .button button {
+  font-size: 14px;
+  cursor: pointer;
+  color: #ffffff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.125rem;
+}
+.end-form .button button:hover {
+  background-color: #ff703cc0;
+}
+.end-form .button a {
+  text-decoration: none;
+  color: #34568b;
+}
+.end-form .button a:hover {
+  color: #ff703cc0;
+}
+.button-reset {
+  height: 36px;
+  margin-left: 6px;
+  border: none;
+  background: #677085;
+  width: 108px;
+}
+.to-main-page {
+  margin-top: 8px;
+}
+.button-submit {
+  border: none;
+  margin-left: 6px;
+  background: #34568b;
+  height: 36px;
+  width: 108px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+  /* line 3 */
+  .power {
+    flex-direction: column;
+  }
+  .power input, .power select {
+    width: 100%;
+  }
+  /* Line 6 */
+  .fee {
+    flex-direction: column;
+  }
+  .fee input {
+    width: 100%;
+  }
+  /* Line 5 */
+  .common-price {
+    flex-direction: column;
+  }
+  .common-price input, .price {
+    width: 100%;
+  }
+  /* Line 7 */
+  .owner-wrapper {
+    flex-direction: column;
+  }
+  .owner-wrapper input {
+    width: 100%;
+  }
+}

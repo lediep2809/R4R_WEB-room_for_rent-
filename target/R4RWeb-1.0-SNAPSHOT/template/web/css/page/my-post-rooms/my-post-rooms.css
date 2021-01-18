@@ -1,0 +1,119 @@
+.content .rent-room {
+    border-bottom: none;
+}
+
+.content .btn {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-evenly;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content .btn label {
+    font-size: 16px;
+}
+.content .btn input {
+    height: 22px;
+    width: 50%;
+    margin: 12px 12px 0 24px;
+}
+
+.content .btn .edit-btn,
+.content .btn .delete-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #34568b;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 8px 16px;
+    margin: 12px 0 12px 48px;
+}
+.content .btn .edit-btn:hover,
+.content .btn .delete-btn:hover {
+    background-color: #ff703cc0;
+}
+
+.content .room-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 12px auto 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content h1 {
+    text-align: center;
+    font-family: GoogleSans-Bold;
+    font-size: 30px;
+}
+
+.content .room-grid .rooms {
+    width: 45%;
+    height: 200px;
+    display: block;
+}
+
+.content .room-grid .rooms h3 {
+    font-family: GoogleSans-Bold;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.content .room-grid .rooms .room-description {
+    font-size: 14px;
+    width: 50%;
+    height: 100px;
+    border-right: 1px solid #000000;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .room-grid .rooms .room-price {
+    font-size: 24px;
+    text-align: center;
+    font-family: GoogleSans-Bold;
+    width: 50%;
+    height: 100px;
+    float: right;
+    line-height: 100px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1007px) {
+    .content .btn label {
+        font-size: 13px;
+    }
+    .content .btn input {
+        margin: 12px 0 0 6px;
+    }
+    .content .btn .edit-btn,
+    .content .btn .delete-btn {
+        margin: 6px 0 6px 6px;
+    }
+    .content .room-grid {
+        flex-direction: column;
+    }
+    .content .room-grid .rooms {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content .room-grid .rooms h3,
+    .content .room-grid .rooms .room-description,
+    .content .room-grid .rooms .room-price {
+        font-size: 13px;
+    }
+}

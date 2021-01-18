@@ -1,0 +1,136 @@
+/* Personal info */
+.content .personal-info {
+    display: flex;
+    background-color: #e4aa95c0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    margin-top: -12px;
+    background-image: url("../../../content/img/R4R.png"),
+    url("../../../content/img/R4R.png");
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 25%, 75%;
+}
+
+.content .personal-info .fullname {
+    font-family: GoogleSans-Bold;
+    font-size: 30px;
+}
+.content .personal-info .email {
+    font-size: 30px;
+}
+
+.content .personal-info .phone-number {
+    font-size: 20px;
+    font-family: GoogleSans-Italic;
+}
+
+.content .personal-info .join-date {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.content .personal-info .join-date p {
+    font-family: GoogleSans-Italic;
+}
+
+/* Rooms */
+.content .room-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: 12px auto 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content h1 {
+    text-align: center;
+    font-family: GoogleSans-Bold;
+    font-size: 30px;
+    margin-top: 16px;
+}
+
+.content .room-grid .rooms {
+    width: 45%;
+    height: 160px;
+    display: block;
+}
+
+.content .room-grid .rooms h3 {
+    font-family: GoogleSans-Bold;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.content .room-grid .rooms .room-description {
+    font-size: 14px;
+    width: 50%;
+    height: 100px;
+    border-right: 1px solid #000000;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .room-grid .rooms .room-price {
+    font-size: 24px;
+    text-align: center;
+    font-family: GoogleSans-Bold;
+    width: 50%;
+    height: 100px;
+    float: right;
+    line-height: 100px;
+}
+
+.content .room-grid .rooms .btn {
+    text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 1007px) {
+    .content .personal-info {
+        margin-top: -35px;
+        background-position: 5%, 95%;
+    }
+    .content .personal-info .fullname,
+    .content .personal-info .email {
+        font-size: 22px;
+    }
+    .content .personal-info .phone-number,
+    .content .personal-info .join-date {
+        font-size: 16px;
+    }
+    .content .room-grid {
+        flex-direction: column;
+    }
+    .content .room-grid .rooms {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .content .personal-info {
+        margin-top: 0;
+        background-image: url("../../../content/img/R4R.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 5%;
+        align-items: flex-start;
+        padding-left: 40%;
+    }
+    .content .room-grid .rooms h3,
+    .content .room-grid .rooms .room-description,
+    .content .room-grid .rooms .room-price {
+        font-size: 13px;
+    }
+}
